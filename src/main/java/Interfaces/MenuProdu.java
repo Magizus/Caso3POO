@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Interfaces;
 
 import java.awt.Font;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 public class MenuProdu extends JFrame {
 
@@ -18,7 +15,7 @@ public class MenuProdu extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);
-
+        //------------------------------------------
         JButton boton1 = new JButton("Cancelar");
         JButton boton2 = new JButton("Registar Producto");
         JLabel Evento = new JLabel("Seleccione el evento ");
@@ -26,7 +23,12 @@ public class MenuProdu extends JFrame {
         JLabel Canti = new JLabel("Ingrese la cantidad que va a dar. (kg)");
         JLabel Cedula = new JLabel("Ingrese su cedula:  ");
         JLabel telefono = new JLabel("Ingrese su numero de telefono: ");
-
+        JTextField txtEvento = new JTextField();
+        JTextField txtTipoP = new JTextField();
+        JTextField txtCanti = new JTextField();
+        JTextField txtCedula = new JTextField();
+        JTextField txtTelefono = new JTextField();
+        //------------------------------------------
         boton1.setBounds(70, 450, 174, 68);
         boton2.setBounds(350, 450, 174, 68);
         Evento.setBounds(30, 40, 200, 30);
@@ -34,17 +36,25 @@ public class MenuProdu extends JFrame {
         Canti.setBounds(30, 200, 380, 30);
         Cedula.setBounds(30, 280, 350, 30);
         telefono.setBounds(30, 360, 350, 30);
-        
-        
-        
+        txtEvento.setBounds(250, 40, 300, 30);
+        txtTipoP.setBounds(330, 120, 220, 30);
+        txtCanti.setBounds(410, 200, 140, 30);
+        txtCedula.setBounds(370, 280, 180, 30);
+        txtTelefono.setBounds(380, 360, 170, 30);
+        //------------------------------------------
         Font fuente = new Font("Arial", Font.PLAIN, 18);
         Evento.setFont(fuente);
         TipoP.setFont(fuente);
         Canti.setFont(fuente);
         Cedula.setFont(fuente);
         telefono.setFont(fuente);
+        txtEvento.setFont(fuente);
+        txtTipoP.setFont(fuente);
+        txtCanti.setFont(fuente);
+        txtCedula.setFont(fuente);
+        txtTelefono.setFont(fuente);
 
-        
+        //------------------------------------------
         add(boton1);
         add(boton2);
         add(Evento);
@@ -52,7 +62,14 @@ public class MenuProdu extends JFrame {
         add(Canti);
         add(Cedula);
         add(telefono);
-        
+        add(txtEvento);
+        add(txtTipoP);
+        add(txtCanti);
+        add(txtCedula);
+        add(txtTelefono);
+        setLayout(null);
+        setVisible(true);
+        //------------------------------------------
 
     }
 
