@@ -18,7 +18,7 @@ public class MenuProdu extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        //------------------------------------------
+       
         JButton boton1 = new JButton("Cancelar");
         JButton boton2 = new JButton("Registrar Producto");
         JLabel Evento = new JLabel("Seleccione el evento ");
@@ -36,7 +36,7 @@ public class MenuProdu extends JFrame {
         JTextField txtCedula = new JTextField();
         JTextField txtTelefono = new JTextField();
 
-        //------------------------------------------
+        
         boton1.setBounds(70, 450, 174, 68);
         boton2.setBounds(350, 450, 174, 68);
         Evento.setBounds(30, 40, 200, 30);
@@ -53,7 +53,7 @@ public class MenuProdu extends JFrame {
         txtCedula.setBounds(370, 280, 180, 30);
         txtTelefono.setBounds(380, 360, 170, 30);
 
-        //------------------------------------------
+       
         Font fuente = new Font("Arial", Font.PLAIN, 18);
         Evento.setFont(fuente);
         TipoP.setFont(fuente);
@@ -66,7 +66,7 @@ public class MenuProdu extends JFrame {
         txtCedula.setFont(fuente);
         txtTelefono.setFont(fuente);
 
-        //------------------------------------------
+        
         add(boton1);
         add(boton2);
         add(Evento);
@@ -81,7 +81,7 @@ public class MenuProdu extends JFrame {
         add(txtTelefono);
         setLayout(null);
         setVisible(true);
-        //------------------------------------------
+       
         boton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
