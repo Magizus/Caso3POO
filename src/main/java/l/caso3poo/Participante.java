@@ -1,15 +1,15 @@
 package l.caso3poo;
 
 public class Participante {
-	private int cedula;
-	private int telefono;
+
+    private int cedula;
+    private int telefono;
     private String evento;
     private String producto;
     private int cantidad;
     private double precio;
     // Getters y Setters
-    
-    
+
     public int getCedula() {
         return cedula;
     }
@@ -17,7 +17,7 @@ public class Participante {
     public void setCedula(int cedula) {
         this.cedula = cedula;
     }
-    
+
     public int getTelefono() {
         return telefono;
     }
@@ -25,7 +25,7 @@ public class Participante {
     public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
-    
+
     public String getEvento() {
         return evento;
     }
@@ -49,6 +49,7 @@ public class Participante {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
     public double getPrecio() {
         return precio;
     }

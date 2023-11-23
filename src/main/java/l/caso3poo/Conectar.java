@@ -1,4 +1,3 @@
-
 package l.caso3poo;
 
 import com.mongodb.client.MongoClient;
@@ -8,8 +7,8 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.FindIterable;
 import org.bson.Document;
 
-
 public class Conectar {
+
     public MongoClient CrearConexion() {
         MongoClient mongo = null;
 
@@ -20,7 +19,7 @@ public class Conectar {
 
         } catch (Exception e) {
             System.err.println("Error en la conexión a la base de datos: " + e.getMessage());
-            
+
         }
 
         return mongo;
@@ -42,14 +41,14 @@ public class Conectar {
             System.err.println("Error al insertar el documento JSON: " + e.getMessage());
         }
     }
-    
-        public void leerDocumentos(MongoClient mongoClient, String baseDeDatos, String coleccion) {
+
+    public void leerDocumentos(MongoClient mongoClient, String baseDeDatos, String coleccion) {
         try {
             MongoDatabase database = mongoClient.getDatabase(baseDeDatos);
             MongoCollection<Document> collection = database.getCollection(coleccion);
 
             FindIterable<Document> documents = collection.find();
-           
+
             for (Document document : documents) {
                 System.out.println(document.toJson());
             }
@@ -57,8 +56,4 @@ public class Conectar {
             System.err.println("Error al leer documentos: " + e.getMessage());
         }
     }
-}  
-   
-
-
-
+}
